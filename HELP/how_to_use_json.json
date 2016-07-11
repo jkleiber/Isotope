@@ -1,0 +1,22 @@
+[
+  {
+    "name":"wait",
+    "id": 0,
+    "desc": "sleep for the specified duration",
+    "subs": [
+      {"name":"time", "id":0,"desc":"wait duration (ms). (0 = forever)"}
+    ]
+  },
+  {
+    "name":"drive",
+    "id": 1,
+    "desc":"drive forward/backward for the specified distance, steering toward the specified angle",
+    "subs" : [
+      {"name":"maxTime", "id":0,"desc":"time limit (ms). (0 = forever)"},
+      {"name":"y","id":1, "desc":"distance to drive (in feet) positive (+) is forwards, negative (-) is backwards  (Distances are from last encpder recet)"},
+      {"name":"heading", "id":2, "desc":"angle to steer toward while driving (clockwise is positive, 0 = drive straight)"},
+	  {"name":"x", "id":3, "desc":"omni left/right distance(feet) positive(+) is right, negative(-) is left"},
+	  {"name":"coast", "id":4, "desc":"coast through the endpoint (1=coast, 2=stop)"}
+    ]
+  },
+ 
